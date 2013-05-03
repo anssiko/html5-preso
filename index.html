@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>HTML5</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/intel-neo-sans.css">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/intel.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+        
+        <script src="demos/jquery-1.9.1.min.js"></script>
+        <script src="demos/jquery.flot.0.8.1.js"></script>
+        <script src="demos/three.min.js"></script>
+        <script src="demos/utils.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section>
+                    <img alt="" class="plain" src="img/html5-512.png">
+                    <p><a href="http://twitter.com/anssik">Anssi Kostiainen</a> / <a href="http://01.org">Intel Open Source Technology Center</a></p>
+                </section>
+                
+                <section>
+                    <h2>About Me</h2>
+                    <p>
+                        Anssi Kostiainen
+                        <a href="http://twitter.com/anssik">@anssik</a>
+                    </p>
+                    <p>
+                        Technical Lead for Web Standards at <a href="http://01.org">Intel Open Source Technology Center</a>
+                    </p>
+                </section>
+
+                <section>
+                    <section>
+                        <!--img class="plain" src="img/otc-1024.png"-->
+                        <img alt="" class="plain" width="400" src="svg/otc_logo.svg" style="width: 100%;">
+                    </section>
+                    <section>
+                        <a href="https://01.org/android-ia/"><img alt="" src="img/logo-android.png"></a>
+                        <a href="https://01.org/connman"><img alt="" src="img/logo-conman.png"></a>
+                        <a href="https://01.org/projects/cordova"><img alt="" src="img/logo-cordova.png"></a>
+                        <a href="https://01.org/cpclient/"><img alt="" src="img/logo-cpclient.png"></a>
+                        <a href="https://01.org/dleyna/"><img alt="" src="img/logo-dleyna.png"></a>
+                        <a href="https://01.org/projects/enterprise-security-infrastructure"><img alt="" src="img/logo-enterprise.png"></a>
+                        <a href="https://01.org/fmbt/"><img alt="" src="img/logo-fmbt.png"></a>
+                        <a href="https://01.org/projects/gupnp"><img alt="" src="img/logo-gupnp.png"></a>
+                        <a href="https://01.org/html5webapps/"><img alt="" src="img/logo-html5.png"></a>
+                        <a href="https://01.org/linuxgraphics/"><img alt="" src="img/logo-intel-linux-graphics.png"></a>
+                        <a href="https://01.org/projects/intel-linux-wireless"><img alt="" src="img/logo-intel-linux-wireless.png"></a>
+                        <a href="https://01.org/projects/kvm"><img alt="" src="img/logo-kvm.png"></a>
+                        <a href="https://01.org/libdmclient/"><img alt="" src="img/logo-libdmclient.png"></a>
+                        <a href="https://01.org/projects/linux-kernel"><img alt="" src="img/logo-linuxkernel.png"></a>
+                        <a href="https://01.org/linux-nfc/"><img alt="" src="img/logo-linuxnfc.png"></a>
+                        <a href="https://01.org/murphy/"><img alt="" src="img/logo-murphy.png"></a>
+                    </section>
+                    <section>
+                        <a href="https://01.org/nodemanager/"><img alt="" src="img/logo-node-manager.png"></a>
+                        <a href="https://01.org/projects/ofono"><img alt="" src="img/logo-ofono.png"></a>
+                        <a href="https://01.org/projects/openstack"><img alt="" src="img/logo-openstack.png"></a>
+                        <a href="https://01.org/projects/poky"><img alt="" src="img/logo-poky.png"></a>
+                        <a href="https://01.org/powertop/"><img alt="" src="img/logo-powertop.png"></a>
+                        <a href="https://01.org/projects/rapid-interface-builder-rib"><img alt="" src="img/logo-rib.png"></a>
+                        <a href="https://01.org/projects/provman"><img alt="" src="img/logo-provman.png"></a>
+                        <a href="https://01.org/projects/qt"><img alt="" src="img/logo-qt.png"></a>
+                        <a href="https://01.org/projects/simple-firmware-interface-sfi"><img alt="" src="img/logo-simplefirmware.png"></a>
+                        <a href="https://01.org/projects/syncevolution"><img alt="" src="img/logo-syncevolution.png"></a>
+                        <a href="https://01.org/projects/tizen"><img alt="" src="img/logo-tizen_0.png"></a>
+                        <a href="https://01.org/projects/wayland"><img alt="" src="img/logo-wayland.png"></a>
+                        <a href="https://01.org/web-simulator/"><img alt="" src="img/logo-web-simulator.png"></a>
+                        <a href="https://01.org/web-simulator/"><img alt="" src="img/logo-xen.png"></a>
+                        <a href="https://01.org/projects/yocto-project"><img alt="" src="img/logo-yocto.png"></a>
+                        <a href="https://01.org/projects"><div id="more-info">Go to 01.org/projects for more</div></a>
+                    </section>
+                    
+                    <section>
+                        <div style="background-color: #fff; border: 4px solid gray;">
+                            <img alt="" class="plain" src="img/html5-512.png" style="width: 20%;">
+                            <img alt="" class="plain" src="img/w3c-512.png" style="width: 18%;">
+                            <br>
+                            <a href="https://01.org/webkit">
+                                <img alt="" class="plain" src="img/webkit-174.png"  style="width: 22%;">
+                            </a>
+                            <img alt="" class="plain" src="img/chromium-512.png" style="width: 17%;">
+                            <img alt="" class="plain" src="img/mozilla-512.png" style="width: 20%;">
+                            <br>
+                            <img alt="" class="plain" src="img/tizen-512.png" style="width: 30%;">
+                            <img alt="" class="plain" src="img/cordova-600.png" style="width: 30%;">
+                            <img alt="" class="plain" src="img/jquery-550.png" style="width: 30%;">
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Today's Agenda</h2>
+                    <ul>
+                        <li>
+                            <h4 class="fragment roll-in">HTML5 Technology Overview</h4>
+                        </li>
+                        <li>
+                            <h4 class="fragment roll-in">HTML5 Demos</h4>
+                        </li>
+                        <li>
+                            <h4 class="fragment roll-in">How to Contribute</h4>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <img alt="" class="plain" src="img/html5-512.png">
+                        <h2>Technology Overview</h2>
+                    </section>
+                    <section>
+                        <h2>Defining HTML5</h2>
+                        <p>People use the term HTML5 in two ways</p>
+                        <ul>
+                            <li>(Loosely) a set of technologies that form the <br><em>Open Web Platform</em>
+                            &asymp; HTML + CSS + JavaScript + Web APIs<!--small>(strictly speaking, HTML5 refers to a single spec that is just one part of the Open Web Platform)</small--></li>
+                            <li>(Strictly) the fifth revision of the HTML standard, part of the <em>Open Web Platform</em></li>
+                        </ul>
+                        <p></p>
+                        <p class="fragment roll-in">In this presentation we use HTML5 to refer to the<br> larger set of technologies aka <em>Open Web Platform</em></p>
+                    </section>
+                    <section>
+                        <h2>Defining HTML5 (cont'd)</h2>
+                        <ul>
+                            <li>Developed under royalty free licensing terms</li>
+                            <li>Device-agnostic: desktop, mobile, tablet, TV, automobile</li>
+                            <li>Multi-application: documents, ebooks, user interfaces, games</li>
+                            <li>Featureful: Semantics, Offline Storage, Device Access, Connectivity, Multimedia, 3D Effects, Performance, Styling</li>
+                        </ul>
+                        <img alt="" class="plain thumb fragment roll-in" src="img/HTML5_Semantics_512.png">
+                        <img alt="" class="plain thumb fragment roll-in" src="img/HTML5_Offline_Storage_512.png">
+                        <img alt="" class="plain thumb fragment roll-in" src="img/HTML5_Device_Access_512.png">
+                        <img alt="" class="plain thumb fragment roll-in" src="img/HTML5_Connectivity_512.png">
+                        <img alt="" class="plain thumb fragment roll-in" src="img/HTML5_Multimedia_512.png">
+                        <img alt="" class="plain thumb fragment roll-in" src="img/HTML5_3D_Effects_512.png">
+                        <img alt="" class="plain thumb fragment roll-in" src="img/HTML5_Performance_512.png">
+                        <img alt="" class="plain thumb fragment roll-in" src="img/HTML5_Styling_512.png">
+                    </section>
+                    <section>
+                        <img alt="" class="plain right" src="img/HTML5_Semantics_512.png">
+                        <h2>Semantics</h2>
+                        <p class="left justify">
+                            Giving meaning to structure, semantics are front and center with HTML5.
+                            A richer set of tags, along with RDFa, microdata, and microformats, are
+                            enabling a more useful, data driven web for both programs and your users.
+                        </p>
+                    </section>
+                    <section>
+                        <img alt="" class="plain left" src="img/HTML5_Offline_Storage_512.png">
+                        <h2>Offline &amp; Storage</h2>
+                        <p class="justify">Web Apps can start faster and work even if there is no
+                            internet connection, thanks to the HTML5 App Cache, as well as the
+                            Local Storage, Indexed DB, and the File API specifications.
+                        </p>
+                    </section>
+                    <section>
+                        <img alt="" class="plain right" src="img/HTML5_Device_Access_512.png">
+                        <h2>Device Access</h2>
+                        <p class="left justify">
+                            Beginning with the Geolocation API, Web Applications can present rich,
+                            device-aware features and experiences. Incredible device access
+                            innovations are being developed and implemented, from audio/video
+                            input access to microphones and cameras, to local data such as contacts
+                            &amp; events, and even tilt orientation.
+                        </p>
+                    </section>
+                    <section>
+                        <img alt="" class="plain left" src="img/HTML5_Connectivity_512.png">
+                        <h2>Connectivity</h2>
+                        <p class="justify">
+                            More efficient connectivity means more real-time chats, faster games,
+                            and better communication. Web Sockets and Server-Sent Events are
+                            pushing (pun intended) data between client and server more efficiently
+                            than ever before.
+                        </p>
+                    </section>
+                    <section>
+                        <img alt="" class="plain right" src="img/HTML5_Multimedia_512.png">
+                        <h2>Multimedia</h2>
+                        <p class="left justify">
+                            Audio and video are first class citizens in the HTML5 web, living in
+                            harmony with your apps and sites. Lights, camera, action!
+                        </p>
+                    </section>
+                    <section>
+                        <img alt="" class="plain left" src="img/HTML5_3D_Effects_512.png">
+                        <h2>3D, Graphics &amp; Effects</h2>
+                        <p class="justify">
+                            Between SVG, Canvas, WebGL, and CSS3 3D features, you're sure to amaze
+                            your users with stunning visuals natively rendered in the browser.
+                        </p>
+                    </section>
+                    <section>
+                        <img alt="" class="plain right" src="img/HTML5_Performance_512.png">
+                        <h2>Performance &amp; Integration</h2>
+                        <p class="left justify">
+                            Make your Web Apps and dynamic web content faster with a variety of
+                            techniques and technologies such as Web Workers and XMLHttpRequest 2.
+                            No user should ever wait on your watch.
+                        </p>
+                    </section>
+                    <section>
+                        <img alt="" class="plain left" src="img/HTML5_Styling_512.png">
+                        <h2>CSS3</h2>
+                        <p class="justify">
+                            CSS3 delivers a wide range of stylization and effects, enhancing the
+                            web app without sacrificing your semantic structure or performance.
+                            Additionally Web Open Font Format (WOFF) provides typographic
+                            flexibility and control far beyond anything the web has offered before.
+                        </p>
+                    </section>
+                    <section style="height: 100%;">
+                        <iframe src="http://platform.html5.org" style="width: 100%; height: 100%;"></iframe>
+                        <small><a href="http://platform.html5.org">platform.html5.org</a></small>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>HTML5 Demos</h2>
+                    </section>
+                    <section>
+                        <h2>CSS3</h2>
+                        <iframe src="demos/stroll.js/" style="width: 100%; height: 80%;"></iframe>
+                        <p>Pure CSS3, no JavaScript</p>
+                    </section>
+                    <section data-state="demo-simplecanvas">
+                        <h2>2D Rendering Area</h2>
+                        <script src="demos/demo-simplecanvas.js"></script>
+                        <div>
+                            <canvas id="demo-simplecanvas" class="canvasdemo" width="640" height="480"></canvas>
+                            <p>Simple rendering of 2D shapes in HTML5 canvas</p>
+                        </div>
+                    </section>
+                    <section data-state="demo-simplesprite">
+                        <h2>Sprite Rendering</h2>
+                        <img alt="" src="demos/nyan-cat.png" id="demo-sprite" style="display: none;">
+                        <script src="demos/demo-simplesprite.js"></script>
+                        <div>
+                            <canvas id="demo-simplesprite" class="canvasdemo" width="640" height="480"></canvas>
+                            <p>Rendering animated sprites in HTML5 canvas</p>
+                        </div>
+                    </section>
+                    <section data-state="demo-simplegraph">
+                        <h2>Vector Drawing</h2>
+                        <script src="demos/demo-simplegraph.js"></script>
+                        <div id="demo-simplegraph" class="graphdemo" style="width:100%; height:480px; font-size: 18pt;">
+                        </div>
+                        <p>Business applications &hearts; HTML5 too</p>
+                    </section>
+                    <section data-state="demo-simple3D">
+                        <h2>3D Rendering in Hardware</h2>
+                        <script src="demos/demo-simple3D.js"></script>
+                        <div>
+                            <canvas id="demo-simple3D" class="canvasdemo" width="640" height="480"></canvas>
+                            <p>Rendering 3D graphics without plugins using WebGL</p>
+                        </div>
+                    </section>
+                    <section>
+                        <!-- https://en.wikipedia.org/wiki/File:The_Ball_-_Screenshot_08.jpg -->
+                        <img alt="" src="img/The_Ball_-_Screenshot_08.jpg">
+                        <p>Unreal Engine 3 ported to JavaScript and WebGL, works in any modern browser
+                        (<a href="http://blog.mozilla.org/blog/2013/03/27/mozilla-is-unlocking-the-power-of-the-web-as-a-platform-for-gaming/">March 2013</a>)</p>
+                    </section>
+                    <section data-state="demo-camera">
+                        <h2>Camera Access &amp; Real-time Video Manipulation</h2>
+                        <iframe id="demo-camera" style="width: 100%; height: 480px; overflow:hidden;"></iframe>
+                    </section>
+                    <section data-state="demo-camera-end">
+                        <p>(This presentation is also pure<br>HTML, CSS, SVG, and JavaScript)</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>How to Contribute</h2>
+                        <h3>And Evolve the Web</h3>
+                        <br>
+                        <div style="background-color: white;">
+                            <!-- http://movethewebforward.org/css/img/beanie-webasaurs.gif -->
+                            <img alt="" src="img/beanie-webasaurs.gif">
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h3>Contribute to Open-source Projects</h3>
+                        <div>
+                        <img alt="" class="plain" src="img/h5bp.png" style="width: 31%;">
+                        <img alt="" class="plain" src="img/jquery-550.png" style="width: 30%;">
+                        <img alt="" class="plain" src="img/modernizr.png" style="width: 30%;">
+                        <ul>
+                            <li>JavaScript: jQuery Mobile, HTML5 Boilerplate, Modernizr ...</li>
+                        </ul>
+                        </div>
+                        <div>
+                        <img alt="" class="plain" src="img/webkit-174.png" style="width: 20%;">
+                        <img alt="" class="plain" src="img/chromium-512.png" style="width: 17%;">
+                        <img alt="" class="plain" src="img/mozilla-512.png" style="width: 20%;">
+                        <ul>
+                            <li>Native: WebKit, Chromium, Mozilla web engines ...</li>
+                        </ul>
+                        </div>
+                        <small>(Just couple of projects worth your time, there are tons of other projects to contribute to too!)</small>
+                    </section>
+                    
+                    <section>
+                        <h3>Write documentation</h3>
+                        <ul>
+                            <li><a href="http://webplatform.org">WebPlatform.org</a> - a community-driven source for comprehensive web developer documentation</li>
+                        </ul>
+                        <!-- https://gist.github.com/mbostock/3853405 -->
+                        <svg viewBox="0 0 190 172" width="190" height="172">
+                          <defs>
+                            <path id="line-long" d="m-15.5,0v85a15.5,15.5 0 0 0 31,0v-85a15.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,85a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
+                            <path id="line-short" d="m-15.5,0v60.81118318204309a15.5,15.5 0 0 0 31,0v-60.81118318204309a15.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,60.81118318204309a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
+                            <clipPath id="clip-orange-red"><use transform="translate(52,19)" xlink:href="#line-long"></use></clipPath>
+                            <clipPath id="clip-red-purple"><use transform="translate(52,104)rotate(-135)" xlink:href="#line-short"></use></clipPath>
+                            <clipPath id="clip-purple-cyan"><use transform="translate(138,19)" xlink:href="#line-long"></use></clipPath>
+                          </defs>
+                          <g transform="translate(-.5,-.5)">
+                            <use transform="translate(52,19)" xlink:href="#line-long" class="orange"></use>
+                            <use transform="translate(52,104)rotate(-135)" xlink:href="#line-short" class="red"></use>
+                            <use transform="translate(138,19)" xlink:href="#line-long" class="cyan"></use>
+                            <use transform="translate(138,104)rotate(135)" xlink:href="#line-short" class="purple"></use>
+                            <g clip-path="url(#clip-orange-red)"><use transform="translate(52,104)rotate(-135)" xlink:href="#line-short" class="orange-red"></use></g>
+                            <g clip-path="url(#clip-red-purple)"><use transform="translate(138,104)rotate(135)" xlink:href="#line-short" class="red-purple"></use></g>
+                            <g clip-path="url(#clip-purple-cyan)"><use transform="translate(138,104)rotate(135)" xlink:href="#line-short" class="purple-cyan"></use></g>
+                            <text x="95" y="150" text-anchor="middle" font-family="Bitter" font-size="20" font-weight="bold" class="white">WebPlatform<tspan class="lightgray">.org</tspan></text>
+                          </g>
+                        </svg>
+                    </section>
+                    
+                    <section>
+                        <h3>Follow discussion and give Feedback on Specifications</h3>
+                        <img alt="" class="plain" src="img/w3c-512.png" style="width: 30%;">
+                        <ul>
+                            <li>Subscribe to W3C mailing lists: <a href="http://lists.w3.org/">lists.w3.org</a></li>
+                            <li>Read specs and give feedback: <a href="http://platform.html5.org/">platform.html5.org</a></li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h3>File Bugs</h3>
+                        <img alt="" class="plain" src="img/webkit-174.png" style="width: 20%;">
+                        <img alt="" class="plain" src="img/chromium-512.png" style="width: 17%;">
+                        <img alt="" class="plain" src="img/mozilla-512.png" style="width: 20%;">
+                        <ul>
+                            <li>WebKit: <a href="https://bugs.webkit.org/">bugs.webkit.org</a></li>
+                            <li>Chrome: <a href="http://crbug.com/">crbug.com</a></li>
+                            <li>Mozilla: <a href="https://bugzilla.mozilla.org/">bugzilla.mozilla.org</a></li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h3>Contribute to Test Suites</h3>
+                        <ul>
+                            <li>Tests are fundamental to standards and to browsers</li>
+                            <li>Assure things work the same across browsers</li>
+                            <li>Get started at: <a href="http://testthewebforward.org/">testthewebforward.org</a></li>
+                        </ul>
+                        <p></p>
+                        <div style="background-color: white;">
+                            <img alt="" src="img/beanie-webasaurs.gif">
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Hack!</h2>
+                    </section>
+                    
+                    <section>
+                        <h3>... and Move the Web Forward</h3>
+                        <p><a href="http://movethewebforward.org/">movethewebforward.org</a></p>
+                    </section>
+                </section>
+
+                <section data-state="html5logo-3d">
+                    <h2>Thanks! Questions?</h2>
+                    <iframe id="html5logo-3d" style="width: 100%; height: 70%;"></iframe>
+                    <p><small>
+                        This presentation was inspired by <a href="http://movethewebforward.org/">
+                        Move the Web Forward</a> and <a href="http://www.w3.org/html/logo/">W3C HTML5</a>
+                        initiatives and various web standardistas and hackers who are moving the Web forward.
+                        Demo credits: <a href="http://lab.hakim.se/">Hakim El Hattab</a>,
+                        <a href="http://www.blitztech.com/">BlitzTech</a>,
+                        <a href="http://shinydemos.com/">Opera Software</a>,
+                        <a href="http://boazsender.com/">Boaz Sender</a>,
+                        <a href="http://jquery.com/">jQuery</a>,
+                        <a href="http://threejs.org/">three.js</a>,
+                        <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.
+                    </small></p>
+                </section>
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+            // Initialize (and suspend) the demos
+            (function() {
+                window.onload = function () {
+                    simpleCanvas.init();
+                    simpleSprite.init();
+                    simpleGraph.init();
+                    simple3D.init();
+                    document.addEventListener('demo-camera', function () {
+                        document.querySelector('#demo-camera').setAttribute('scrolling', 'no');
+                        document.querySelector('#demo-camera').src = 'demos/explode/';
+                    });
+                    document.addEventListener( 'demo-camera-end', function () {
+                        document.querySelector('#demo-camera').src = '';
+                    });
+                    document.addEventListener( 'html5logo-3d', function () {
+                        document.querySelector('#html5logo-3d').src = 'demos/html5logo-3d.html';
+                    });
+                };
+            })();
+
+        </script>
+
+    </body>
+</html>
