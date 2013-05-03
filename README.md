@@ -12,4 +12,4 @@ Demo credits: [Hakim El Hattab](http://lab.hakim.se/),
 
 Presentation built with [reveal.js](http://lab.hakim.se/reveal-js/).
 
-Initially presented at [Happy Hacking Day](http://happyhackingday.org) Day on 2013-05-02.
+Initially presented at [Happy Hacking Day](http://happyhackingday.org) event on 2013-05-02.
